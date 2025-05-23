@@ -1,9 +1,9 @@
 import SideNav from '@app/ui/dashboard/sidenav';
-import { ComponentPropsWithRef } from 'react';
+import { PropsWithChildren } from 'react';
 
-type Props = ComponentPropsWithRef<'div'>;
+// type Props = ComponentPropsWithRef<'div'>;
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: PropsWithChildren) => {
   return (
     <div className='flex flex-col h-screen md:flex-row md:overflow-hidden'>
       <div className='w-full flex-none md:w-64'></div>
